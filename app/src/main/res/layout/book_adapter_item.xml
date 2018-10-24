@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/totalBooks"
+        android:layout_alignParentRight="true"
+        android:text="Total"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/remainingBook"
+        android:layout_toLeftOf="@id/totalBooks"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Remaining"
+        android:gravity="center"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/remainingBook"
+        android:gravity="left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/bookNameHeader"
+            android:text="Book:"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/book_title"
+    android:text="Bookname"
+    android:textColor="@color/black"
+    android:layout_marginLeft="15dp"
+    android:textSize="15dp"
+    android:layout_below="@id/bookNameHeader"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AuthorHeader"
+        android:text="Authors:"
+        android:layout_marginTop="8dp"
+        android:textSize="14dp"
+        android:layout_below="@id/book_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/authors"
+        android:layout_below="@id/AuthorHeader"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:text="authors"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

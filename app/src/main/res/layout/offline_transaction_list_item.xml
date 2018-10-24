@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="idCardNumber"
+        android:textSize="12dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/black"
+        android:id="@+id/idCardNumber"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+    android:text="BookCode"
+    android:textSize="12dp"
+    android:layout_below="@id/idCardNumber"
+    android:textColor="@color/black"
+    android:id="@+id/bookCode"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAllCaps="false"
+        android:text="Return"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/issueReturn"
+        android:background="@drawable/button_selector"
+        android:layout_margin="2dp"
+        />
+</RelativeLayout>

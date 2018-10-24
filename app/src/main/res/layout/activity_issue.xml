@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.susankya.ntbnse_library.ReturnActivity"
+    android:weightSum="5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/scanBook">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Book Code:"
+                android:layout_marginLeft="5dp"/>
+            <include layout="@layout/scan_book"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!---->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="20dp"-->
+                <!--android:text="_ _ _ _ _ _ _"-->
+                <!--android:id="@+id/book_code"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_weight="1"/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:gravity="center"-->
+                <!--android:id="@+id/scanBookButton"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@drawable/custom_button_text_color_selector"-->
+                <!--android:background="@drawable/button_selector"-->
+                <!--android:text="Scan Book"-->
+                <!--/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/scanBook">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Roll number:"
+                android:layout_marginLeft="5dp"/>
+            <include layout="@layout/scan_card"
+                />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="20dp"-->
+                <!--android:id="@+id/id_code"-->
+                <!--android:text="_ _ _ _ _ _ _"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_weight="1"/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:textColor="@drawable/custom_button_text_color_selector"-->
+                <!--android:background="@drawable/button_selector"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:id="@+id/scanIdCardButton"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:text="Scan ID Card"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@drawable/custom_button_text_color_selector"
+        android:background="@drawable/button_selector"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:text="Issue Book"
+        android:id="@+id/issueButton"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        />
+</RelativeLayout>
